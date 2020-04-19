@@ -9,3 +9,9 @@ npm-debug.log
 npm-debug.log.*
 thumbs.db
 !.gitkeep
+.idea/
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/music-hub-app.iml
+.idea/vcs.xml
