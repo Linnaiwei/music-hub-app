@@ -1,10 +1,10 @@
 <template>
-  <section class="hero is-fullheight">
+  <section class="hero is-fullheight" id="Layout">
     <div class="hero-head">
       <MusicNav></MusicNav>
     </div>
-    <div class="hero-body">
-      body
+    <div class="hero-body music-list-container">
+      <MusicList></MusicList>
     </div>
     <div class="hero-foot">
       foot
@@ -14,9 +14,11 @@
 
 <script>
   import MusicNav from "./Layout/MusicNav";
+  import MusicList from "./Layout/MusicList";
   export default {
     components: {
-      MusicNav
+      MusicNav,
+      MusicList
     },
     data () {
       return {
@@ -31,6 +33,10 @@
   }
 </script>
 
-<style scoped>
-
+<style lang="less" type="text/less" scoped>
+  #Layout{
+    .music-list-container{
+      align-items: stretch;
+    }
+  }
 </style>
